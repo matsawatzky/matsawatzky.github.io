@@ -15,7 +15,16 @@ h2 {
     border-bottom: 1px solid #000; 
     line-height: 0.1em;
     margin: 10px 0 20px; 
-} 
+}
+
+h5 {
+    text-align: center;
+}
+
+.card{
+    text-align: center;
+    margin: auto;
+}
  
 h2 span { 
      background:#fff; 
