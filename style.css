@@ -31,5 +31,18 @@ h2 span {
 }
   
 .heading1 {
+    font-weight: bolder;
+    font-size:large;
+}
+
+
+
+.filler {
+    font-size: smaller;
+}
+
+.colorText{
+    color : blue;
     font-weight: bold;
+    font-size: medium;
 }
