@@ -4,7 +4,9 @@ ul {
 
   
 .center {
-    text-align: center;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
 }
 
 h2 {
