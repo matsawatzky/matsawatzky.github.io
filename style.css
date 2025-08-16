@@ -101,8 +101,6 @@ h2 span {
   margin-bottom: 0.5rem;
 }
 
-
-
 .filler {
   font-size: medium;
   text-align: left; 
@@ -128,3 +126,34 @@ footer .nav-link {
     font-weight: bold;
     font-size: medium;
 }
+
+.project-entry h3 {
+  font-weight: bold;
+}
+
+.project-entry .tech-stack {
+  font-family: monospace;
+  background-color: #f8f9fa;
+  padding: 0.5rem;
+  border-left: 4px solid #0d6efd;
+}
+
+video.demo-video,
+img.demo-screenshot {
+  border-radius: 8px;
+}
+
+
+.project-tldr {
+  font-style: italic;
+  color: #555;
+}
+
+.tech-stack {
+  font-family: monospace;
+  color: #333;
+  background: #f8f9fa;
+  padding: 0.5rem;
+  border-left: 4px solid #0d6efd;
+}
+

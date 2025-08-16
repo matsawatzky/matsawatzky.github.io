@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mathieu Sawatzky's Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link rel = "stylesheet" href="./style.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mathieu Sawatzky's Portfolio</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
 
 <!-- Nav Bar Content -->
-<nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,33 +55,80 @@
     </div>
   </nav>
 
-    <!-- Hero -->
+  <!-- Portfolio Entry -->
+  <div class="container py-5">
+    <div class="card shadow-lg p-4 mb-5">
 
-    <div class="px-4 py-5 my-5 text-center">
-        <div class="col-lg-6 mx-auto">
-          <h4>Here is a selection of some of my favourite projects. To view my full portfolio click the button below to view my GitHub</h4>
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button onclick = "window.location.href=href='https://github.com/matsawatzky';" type="button" class="btn btn-primary btn-lg px-4 gap-3" >GitHub</button>
-          </div>
+      <!-- Title -->
+      <h3 class="fw-bold"> AI-Powered Dashboard for Call Centers</h2>
+
+      <!-- Tags -->
+      <div class="mb-3">
+        <span class="badge bg-secondary me-2">Capstone</span>
+        <span class="badge bg-primary me-2">LLM</span>
+        <span class="badge bg-success">Vector Search</span>
+      </div>
+
+      <!-- TL;DR -->
+      <p class="fst-italic text-muted mb-4">
+        A real-time NLP-driven dashboard designed to streamline call center operations using LLMs, vector search, and custom widgets.
+      </p>
+
+      <!-- Visuals -->
+      <div class="row mb-4">
+        <div class="col-md-6 mb-3">
+          <video autoplay muted loop playsinline class="w-100 rounded shadow">
+            <source src="./media/ccdashboard-demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
-    </div>
-
-
-
-    <!-- Card 1 -->
-
-    <div class="card" style="width: 80%;">
-        <img src="..." class="card-img-top" alt="insert a fun image related to project">
-        <div class="card-body">
-          <h5 class="card-title">Project Name</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">GitHub Repo</a>
+        <div class="col-md-6">
+          <img src="./media/ccdashboard-screenshot.png" alt="Dashboard Screenshot" class="img-fluid rounded shadow">
         </div>
       </div>
 
+      <!-- Context -->
+      <h3 class="mt-4">Project Context</h3>
+      <p>
+        This project was part of my senior capstone for the Applied Computer Science degree at the University of Winnipeg.
+        Our industry sponsor was building a SaaS platform aimed at improving real-time decision-making in call centers using 
+        natural language processing and speech-to-text technology.
+      </p>
 
+      <!-- Role -->
+      <h3 class="mt-4">My Role</h3>
+      <p>
+        As team lead and full-stack developer, I designed and implemented key features such as widget generation via natural language prompts,
+        vector-based context search, and front-end integration with the LLM API. I also helped define internal development processes and mentored 
+        junior teammates as we iterated on architecture.
+      </p>
 
-    <!-- Footer -->
+      <!-- Challenges -->
+      <h3 class="mt-4">Challenges & Lessons Learned</h3>
+      <p>
+        This was my first time working with vector databases and LLMs in a production-style setting. One key challenge was getting consistent, 
+        relevant output from the LLMs when context size and embedding quality varied. I learned a lot about prompt tuning, modular system design,
+        and the tradeoffs of different vector search techniques.
+      </p>
+
+      <!-- Do It Differently -->
+      <h3 class="mt-4">If I Were to Do It Again...</h3>
+      <p>
+        I’d invest more time early on into setting up automated CI pipelines and linting to reduce integration friction. I’d also involve 
+        end-users earlier in the UI/UX testing process, especially since some of our assumptions around dashboard layout didn’t fully match 
+        how users interacted with the data.
+      </p>
+
+      <!-- Tech Stack -->
+      <h3 class="mt-4">Tech Stack</h3>
+      <p class="bg-light border-start border-primary ps-3 py-2">
+        React · Tailwind · Flask · PostgreSQL · Weaviate · OpenAI API · LangChain · GitHub Projects
+      </p>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
   <div class="container">
     <footer class="py-3 my-4">
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">
@@ -89,7 +140,8 @@
     </footer>
   </div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 </body>
 </html>
