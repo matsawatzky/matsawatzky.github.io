@@ -55,6 +55,110 @@
     </div>
   </nav>
 
+<div class="container section-container">
+  <h2 class="section-divider"><span>Currently Cooking</span></h2>
+  <p class="text-muted text-center mb-0">
+    Ongoing work exploring local-first AI systems, retrieval-augmented generation,
+    and long-term knowledge modeling.
+  </p>
+</div>
+
+
+
+  <!-- Portfolio Entry -->
+  <div class="container py-5">
+    <div class="card shadow-lg p-4 mb-5">
+
+      <!-- Title -->
+      <h3 class="fw-bold"> Delphi </h2>
+
+      <!-- Tags -->
+      <div class="mb-3">
+        <span class="badge bg-secondary me-2">In Progress</span>
+        <span class="badge bg-primary me-2">RAG</span>
+        <span class="badge bg-success me-2">Local LLM</span>
+        <span class="badge bg-dark">PostgreSQL</span>
+      </div>
+
+      <!-- TL;DR -->
+      <p class="fst-italic text-muted mb-4">
+        An ongoing research project exploring local LLM orchestration, retrieval-augmented generation, and long-term conversational memory over a personal knowledge base.
+      </p>
+
+      <!-- Visuals -->
+      <div class="row mb-4 justify-content-center">
+        <div class="col-md-10 mb-8">
+          <video autoplay muted loop playsinline class="w-100 rounded shadow">
+            <source src="something.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+
+      <!-- Context -->
+      <h3 class="mt-4">Project Context</h3>
+      <p>
+        Delphi is my ongoing effort to build a local-first AI assistant that can answer questions against a personal knowledge base (PDFs, notes, and reference material) 
+        without relying on a hosted chat product.
+
+        The goal is to combine strong retrieval (so answers stay grounded in source material) with long-term conversational memory (so sessions can resume without losing 
+        context). It’s also a practical sandbox for exploring modern RAG design choices: chunking strategies, embedding models, reranking, and query routing.
+      </p>
+
+      <!-- Role -->
+      <h3 class="mt-4">My Role</h3>
+      <p>
+        I’m designing and building Delphi end-to-end: system architecture, database schema, ingestion pipeline, retrieval layer, and the LLM orchestration layer 
+        (routing + context assembly). I’m intentionally keeping the design modular so components can be swapped (local vs API models, different vector stores, different 
+        chunking strategies) without rewriting the system.
+      </p>
+
+      <!-- Challenges -->
+      <h3 class="mt-4">Challenges & Lessons Learned</h3>
+      <p>
+        The hardest part has been getting the boundaries right: what belongs in the database layer, what belongs in retrieval, and what belongs in the orchestration layer. 
+        Early versions mixed responsibilities and made iteration painful.
+
+        I’ve also learned how quickly “RAG quality” becomes a systems problem rather than an LLM problem—chunking, embedding choice, metadata, and retrieval filters often 
+        matter more than model size once you’re working with real documents.
+      </p>
+
+      <!-- Do It Differently -->
+      <h3 class="mt-4">Current Status</h3>
+      <p>
+        Working prototype with project-scoped chats, a rough document ingestion flow, and basic retrieval-backed responses. Core focus right now is improving grounding quality 
+        through chunking strategies, and better query routing.
+      </p>
+
+      <h3 class="mt-4">Next Milestones</h3>
+      <p>
+        Improving the document ingestion pipeline with more advanced chunking strategies, and retrieval evaluation.
+      </p>
+
+
+      <!-- Tech Stack -->
+      <h3 class="mt-4">Tech Stack</h3>
+      <p class="bg-light border-start border-primary ps-3 py-2">
+        Python · PostgreSQL (pgvector) · Local LLMs (LM Studio / Ollama) · Embeddings · RAG Pipeline · GitHub Projects · (Planned: Graph Layer / Neo4j, GUI)
+      </p>
+
+    </div>
+  </div>
+
+<div class="container section-container">
+  <h2 class="section-divider"><span>Shipped Projects</span></h2>
+  <p class="text-muted text-center mb-0">
+    Selected projects that have been deployed or used in real-world environments.
+  </p>
+</div>
+
+
+
+<!-- ccDashboard -->
+<!-- Study Buddy -->
+
+
   <!-- Portfolio Entry -->
   <div class="container py-5">
     <div class="card shadow-lg p-4 mb-5">

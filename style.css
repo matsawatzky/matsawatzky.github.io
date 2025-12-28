@@ -159,3 +159,24 @@ img.demo-screenshot {
   border-left: 4px solid #0d6efd;
 }
 
+/* Section containers for portfolio grouping */
+.section-container {
+  background-color: rgba(255, 255, 255, 0.65); /* slightly stronger than cards */
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* Section divider spacing refinement */
+.section-divider {
+  margin: 0 0 0.75rem;
+}
+
+.section-divider + p {
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
