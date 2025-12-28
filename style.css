@@ -69,9 +69,11 @@ h5 {
     text-align: center;
 }
 
-.card{
-    text-align: center;
-    margin: auto;
+.card-img-top img {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
  
 h2 span { 
