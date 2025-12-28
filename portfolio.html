@@ -96,15 +96,15 @@
       <!-- Role -->
       <h3 class="mt-4">My Role</h3>
       <p>
-        As team lead and full-stack developer, I designed and implemented key features such as widget generation via natural language prompts,
-        vector-based context search, and front-end integration with the LLM API. I also helped define internal development processes and mentored 
-        junior teammates as we iterated on architecture.
+        As team lead and full-stack developer, I designed and implemented key features such as database schemas, natural language processing of user inputs,
+        vector-based context search, and back-end integration with the LLM and encoder APIs. I also helped define internal development processes, was the "big picture" engineer/architect,
+        as well as the point person for stakeholder communication.
       </p>
 
       <!-- Challenges -->
       <h3 class="mt-4">Challenges & Lessons Learned</h3>
       <p>
-        This was my first time working with vector databases and LLMs in a production-style setting. One key challenge was getting consistent, 
+        This was my first time working with vector and graph databases, and LLMs in a production-style setting. One key challenge was getting consistent, 
         relevant output from the LLMs when context size and embedding quality varied. I learned a lot about prompt tuning, modular system design,
         and the tradeoffs of different vector search techniques.
       </p>
@@ -112,7 +112,7 @@
       <!-- Do It Differently -->
       <h3 class="mt-4">If I Were to Do It Again...</h3>
       <p>
-        I’d invest more time early on into setting up automated CI pipelines and linting to reduce integration friction. I’d also involve 
+        I’d invest more time early on into setting up linting and a style guide to reduce integration friction. I’d also involve 
         end-users earlier in the UI/UX testing process, especially since some of our assumptions around dashboard layout didn’t fully match 
         how users interacted with the data.
       </p>
@@ -131,25 +131,25 @@
     <div class="card shadow-lg p-4 mb-5">
 
       <!-- Title -->
-      <h3 class="fw-bold"> Title</h2>
+      <h3 class="fw-bold"> Study Buddy</h2>
 
       <!-- Tags -->
       <div class="mb-3">
-        <span class="badge bg-secondary me-2">Tag</span>
-        <span class="badge bg-primary me-2">tag</span>
-        <span class="badge bg-success">Tag</span>
+        <span class="badge bg-secondary me-2">Research</span>
+        <span class="badge bg-primary me-2">Graphs</span>
+        <span class="badge bg-success">Algorithms</span>
       </div>
 
       <!-- TL;DR -->
       <p class="fst-italic text-muted mb-4">
-        Tagline
+        A graph-based matching tool that pairs study participants across two cohorts by maximizing similarity across physiological constraints, replacing manual matching in a real research lab.
       </p>
 
       <!-- Visuals -->
       <div class="row mb-4 justify-content-center">
         <div class="col-md-10 mb-8">
           <video autoplay muted loop playsinline class="w-100 rounded shadow">
-            <source src="something.mp4" type="video/mp4">
+            <source src="StudyBuddyDemo.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
@@ -159,39 +159,48 @@
       <!-- Context -->
       <h3 class="mt-4">Project Context</h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a congue nisl. Ut euismod nibh et felis vehicula feugiat. Vestibulum vel 
-        velit ac risus porta tristique. Vestibulum condimentum luctus faucibus. Nullam tincidunt quis ex at iaculis. Duis accumsan enim vitae 
-        vehicula rhoncus. Mauris porttitor nisi lectus, sed ultricies lectus lacinia vel. Nam vel maximus nunc.
+        This tool was developed for an exercise physiology research lab to automate the matching of study participants across two predefined cohorts, 
+        such as men to women or younger participants to older participants.
+
+        Matches were based on physiological similarity rather than availability. Constraints included factors such as age, height, weight, and VO₂ max, 
+        with the goal of producing well-matched pairs that minimized confounding variables in study design.
+
+        Prior to this tool, participant matching was performed manually using spreadsheets and visual inspection. This approach was time-intensive, 
+        difficult to scale, and often made it challenging to ensure that the maximum number of viable participant pairs were matched.
       </p>
 
       <!-- Role -->
       <h3 class="mt-4">My Role</h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a congue nisl. Ut euismod nibh et felis vehicula feugiat. Vestibulum vel 
-        velit ac risus porta tristique. Vestibulum condimentum luctus faucibus. Nullam tincidunt quis ex at iaculis. Duis accumsan enim vitae 
-        vehicula rhoncus. Mauris porttitor nisi lectus, sed ultricies lectus lacinia vel. Nam vel maximus nunc.
+        I designed the matching logic, implemented the algorithm, and built the application end-to-end. This included formalizing the lab’s matching criteria into a 
+        quantitative model and translating those criteria into a graph-based matching problem.
+
+        I also worked directly with lab users to validate that the resulting matches aligned with their research expectations.
       </p>
 
       <!-- Challenges -->
       <h3 class="mt-4">Challenges & Lessons Learned</h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a congue nisl. Ut euismod nibh et felis vehicula feugiat. Vestibulum vel 
-        velit ac risus porta tristique. Vestibulum condimentum luctus faucibus. Nullam tincidunt quis ex at iaculis. Duis accumsan enim vitae 
-        vehicula rhoncus. Mauris porttitor nisi lectus, sed ultricies lectus lacinia vel. Nam vel maximus nunc.
+        As my first real-world software project, this application was a major learning experience. I gained hands-on experience building an interface that was 
+        intuitive for non-technical users, translating informal requirements into code, and iterating based on real user feedback.
+
+        It highlighted the importance of designing around actual workflows rather than idealized assumptions, especially in research environments where edge cases are the norm.
       </p>
 
       <!-- Do It Differently -->
       <h3 class="mt-4">If I Were to Do It Again...</h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a congue nisl. Ut euismod nibh et felis vehicula feugiat. Vestibulum vel 
-        velit ac risus porta tristique. Vestibulum condimentum luctus faucibus. Nullam tincidunt quis ex at iaculis. Duis accumsan enim vitae 
-        vehicula rhoncus. Mauris porttitor nisi lectus, sed ultricies lectus lacinia vel. Nam vel maximus nunc.
+        If I were to rebuild this system, I would explore integrating qualitative encodings so users would not be restricted to a fixed number of quantitative variables with 
+        simple ± thresholds.
+
+        This would expand the tool’s applicability beyond purely quantitative exercise science studies to other research domains where similarity is more contextual or 
+        categorical in nature.
       </p>
 
       <!-- Tech Stack -->
       <h3 class="mt-4">Tech Stack</h3>
       <p class="bg-light border-start border-primary ps-3 py-2">
-        React · Tailwind · Flask · PostgreSQL · Weaviate · OpenAI API · LangChain · GitHub Projects
+        Python · Graph Algorithms (Bipartite Matching) · Tkinter · CSV Data Pipelines · GitHub
       </p>
 
     </div>
