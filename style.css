@@ -2,7 +2,29 @@ ul {
     list-style-type: none ;
 }
 
-  
+/* Compact developer-style navbar */
+.custom-navbar {
+padding: 0.2rem 0;
+font-size: 0.9rem;
+}
+
+/* Tight link spacing */
+.custom-navbar .nav-link {
+padding: 0.3rem 0.7rem;
+display: flex;
+align-items: center;
+gap: 6px;
+}
+
+/* Subtle hover effect */
+.custom-navbar .nav-link {
+color: #9ecbff;
+}
+
+/* Remove excess collapse spacing */
+.custom-navbar .navbar-collapse {
+margin-top: 0;
+}
 .center {
     text-align: left;
     width: 80%;
