@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mathieu Sawatzky's Field Notes</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+<!-- Nav Bar Content -->
+  <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body sticky-top" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> <span class="navbar-toggler-icon"></span> </button> 
+    <div class="collapse navbar-collapse" id="navbarNav"> <ul class="navbar-nav ms-auto"> 
+      <li class="nav-item"> <a class="nav-link active" href="./index.html"> <!-- icon --> Home </a> </li> 
+      <li class="nav-item"> <a class="nav-link" href="./projects.html"> Projects </a> </li>
+      <li class="nav-item"> <a class="nav-link" href="./fieldnotes.html"> Field Notes </a> </li> 
+      <li class="nav-item"> <a class="nav-link" href="https://www.linkedin.com/in/mathieusawatzky" target="_blank"> LinkedIn </a> </li> </ul> </div>
+    </div>
+  </nav>
+
+<div class="container py-5">
+
+  <div class="card shadow-lg p-4 mb-4">
+
+    <h4 class="fw-bold">Algorithms – The Structure Shapes the Solution</h4>
+    <p class="text-muted mb-2">February 2026</p>
+
+    <div class="mb-3">
+      <span class="badge bg-secondary me-2">Algorithms</span>
+      <span class="badge bg-primary">Data Structures</span>
+    </div>
+
+<div class="mb-4 text-center">
+  <img src="images/cube.jpg"
+       alt="Data engineering pipeline diagram"
+       class="img-fluid rounded shadow"
+       style="max-width: 800px;">
+</div>
+
+    <p>
+      One of the biggest takeaways from my algorithm design course so far is realizing that most algorithms are not something to be memorized.
+      They emerge naturally from the properties of the data structure being used.
+      When you understand the structure, the algorithm often becomes obvious, as algorithms are often just constraints meeting structure
+      <br>
+      <br>
+      Examples:
+    </p>
+
+    <ol>
+      <li>Choosing the right structure often reduces a complex algorithm to a simple operation repeated efficiently.</li>
+      <li>Many algorithms succeed because they exploit guarantees such as ordering, hierarchy, or locality.</li>
+      <li>Good algorithm design is often the art of turning a problem into one that a known structure already solves well.</li>
+    </ol>
+
+    <p>In that sense, algorithm design feels less like inventing clever tricks and more like discovering the structure already hiding inside the problem.</p>
+
+  </div>
+
+</div>
+
+<div class="container py-5">
+
+  <div class="card shadow-lg p-4 mb-4">
+
+    <h4 class="fw-bold">Data Engineering: The Hidden Work</h4>
+    <p class="text-muted mb-2">January 2026</p>
+
+    <div class="mb-3">
+      <span class="badge bg-secondary me-2">Data Engineering</span>
+      <span class="badge bg-primary">Analytics</span>
+    </div>
+
+<div class="mb-4 text-center">
+  <img src="images/cleaning.jpg"
+       alt="Data engineering pipeline diagram"
+       class="img-fluid rounded shadow"
+       style="max-width: 800px;">
+</div>
+
+    <p>
+      Most of the work in real data systems is not modeling or visualization. It is fixing the data.
+      <br>
+      <br>
+      Common issues:
+    </p>
+
+    <ol>
+      <li>inconsistent data types</li>
+      <li>historical schema drift</li>
+      <li>missing values</li>
+      <li>duplicated entries</li>
+      <li>improperly entered data</li>
+    </ol>
+
+    <p>A large part of a data engineer’s job is building pipelines that normalize messy operational data into something analyzable.
+    Clean data isn’t glamorous, but it’s the foundation everything else sits on.</p>
+
+  </div>
+
+</div>
+
+<div class="container py-5">
+
+  <div class="card shadow-lg p-4 mb-4">
+
+    <h4 class="fw-bold">Programming – Systems Thinking from Biology</h4>
+    <p class="text-muted mb-2">December 2025</p>
+
+    <div class="mb-3">
+      <span class="badge bg-secondary me-2">Systems Design</span>
+    </div>
+
+    <div class="mb-4 text-center">
+  <img src="images/biocompsci.jpg"
+       alt="Data engineering pipeline diagram"
+       class="img-fluid rounded shadow"
+       style="max-width: 800px;">
+</div>
+
+    <p>
+      Coming from kinesiology influenced how I think about software systems.
+      <br>
+      <br>
+      Biological systems work through interacting subsystems such as:
+    </p>
+
+    <ol>
+      <li>circulatory system</li>
+      <li>nervous system</li>
+      <li>muscular system</li>
+    </ol>
+
+    <p>Software architectures behave similarly. A good system is not one giant components. It’s a collection of smaller components that communicate clearly.
+        <br>
+        <br>
+       Healthy systems share traits:
+    </p>
+
+    <ol>
+      <li>clear boundaries</li>
+      <li>feedback loops</li>
+      <li>redundancy</li>
+      <li>resiliency/adaptability</li>
+    </ol>
+
+  </div>
+
+</div>
+
+  <!-- Footer -->
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="./projects.html" class="nav-link px-2 text-body-secondary">Projects</a></li>
+        <li class="nav-item"> <a href="./fieldnotes.html" class="nav-link px-2 text-body-secondary"> Field Notes </a> </li> 
+        <li class="nav-item"> <a  href="https://www.linkedin.com/in/mathieusawatzky" class="nav-link px-2 text-body-secondary"> LinkedIn </a> </li> </ul> </div>
+      </ul>
+      <p class="text-center text-body-secondary">© 2026 Mathieu Sawatzky</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+</html>
