@@ -25,10 +25,12 @@ color: #9ecbff;
 .custom-navbar .navbar-collapse {
 margin-top: 0;
 }
+
 .center {
-    text-align: left;
-    width: 80%;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 .align-bottom {
@@ -40,9 +42,15 @@ margin-top: 0;
     linear-gradient(rgba(255, 255, 255, 0.00), rgba(255, 255, 255, 0.85)),
     url('./pexels-tomas-anunziata-129267-3876460.jpg') no-repeat center center;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .body {
+    background-attachment: fixed;
+  }
 }
 
 .container {
@@ -105,6 +113,13 @@ h5 {
   margin: auto;
 }
 
+@media (max-width: 768px) {
+  .history1 {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
 .heading1 {
   display: flex;
   align-items: center;
@@ -123,6 +138,7 @@ h5 {
   text-align: left; 
   max-width: 700px;
   margin: 0 auto;
+  padding: 0 0.5rem;
 }
 
 
@@ -195,3 +211,24 @@ img.demo-screenshot {
 }
 
 
+@media (max-width: 768px) {
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .heading1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .filler {
+    font-size: 0.95rem;
+    text-align: left;
+  }
+
+  .center {
+    padding: 1rem;
+  }
+
+}
